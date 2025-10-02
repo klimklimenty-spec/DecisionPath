@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		643B2DE32E8EA36400390A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDA2E8EA36400390A2A /* Assets.xcassets */; };
+		643B2DE52E8EA36400390A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDD2E8EA36400390A2A /* LaunchScreen.storyboard */; };
+		643B2DE62E8EA36400390A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDF2E8EA36400390A2A /* Main.storyboard */; };
+		643B2DE72E8EA36400390A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DD92E8EA36400390A2A /* AppDelegate.swift */; };
+		643B2DE82E8EA36400390A2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DE02E8EA36400390A2A /* SceneDelegate.swift */; };
+		643B2DE92E8EA36400390A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DE12E8EA36400390A2A /* ViewController.swift */; };
+		643B2DED2E8EA37C00390A2A /* OnboardingStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DEC2E8EA37C00390A2A /* OnboardingStepView.swift */; };
+		643B2DEF2E8EA38700390A2A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DEE2E8EA38700390A2A /* OnboardingView.swift */; };
+		643B2DF12E8EA39300390A2A /* AchievementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DF02E8EA39300390A2A /* AchievementType.swift */; };
+		643B2DF32E8EA39F00390A2A /* AchievementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DF22E8EA39F00390A2A /* AchievementsService.swift */; };
+		643B2DF52E8EA3AA00390A2A /* AchievementUnlockedAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DF42E8EA3AA00390A2A /* AchievementUnlockedAlertView.swift */; };
+		643B2DF72E8EA3B500390A2A /* AchievementsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DF62E8EA3B500390A2A /* AchievementsListView.swift */; };
+		643B2DF92E8EA3C000390A2A /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DF82E8EA3C000390A2A /* GeminiService.swift */; };
+		643B2DFB2E8EA3CC00390A2A /* AICardGeneratorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DFA2E8EA3CC00390A2A /* AICardGeneratorViewModel.swift */; };
+		643B2DFD2E8EA3D700390A2A /* AICardGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DFC2E8EA3D700390A2A /* AICardGeneratorView.swift */; };
+		643B2DFF2E8EA3E400390A2A /* CustomCardObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2DFE2E8EA3E400390A2A /* CustomCardObject.swift */; };
+		643B2E012E8EA3F300390A2A /* CustomThemesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E002E8EA3F300390A2A /* CustomThemesListView.swift */; };
+		643B2E032E8EA3FF00390A2A /* CreateEditThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E022E8EA3FF00390A2A /* CreateEditThemeViewModel.swift */; };
+		643B2E052E8EA40A00390A2A /* CreateEditThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E042E8EA40A00390A2A /* CreateEditThemeView.swift */; };
+		643B2E072E8EA41500390A2A /* GameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E062E8EA41500390A2A /* GameTheme.swift */; };
+		643B2E092E8EA42000390A2A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E082E8EA42000390A2A /* DataManager.swift */; };
+		643B2E0B2E8EA42C00390A2A /* GameThemesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E0A2E8EA42C00390A2A /* GameThemesView.swift */; };
+		643B2E0D2E8EA43600390A2A /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E0C2E8EA43600390A2A /* GameViewModel.swift */; };
+		643B2E0F2E8EA44100390A2A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E0E2E8EA44100390A2A /* CardView.swift */; };
+		643B2E112E8EA44D00390A2A /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E102E8EA44D00390A2A /* GamePlayView.swift */; };
+		643B2E132E8EA45A00390A2A /* ResultPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E122E8EA45A00390A2A /* ResultPathView.swift */; };
+		643B2E152E8EA46500390A2A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B2E142E8EA46500390A2A /* MainTabView.swift */; };
+		643B2E182E8EA49C00390A2A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 643B2E172E8EA49C00390A2A /* RealmSwift */; };
+		643B2E192E8EA4A400390A2A /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 643B2E172E8EA49C00390A2A /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		643B2E1A2E8EA4A400390A2A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				643B2E192E8EA4A400390A2A /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChooseTheWinnerCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		643B2DD92E8EA36400390A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		643B2DDA2E8EA36400390A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		643B2DDB2E8EA36400390A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		643B2DDC2E8EA36400390A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		643B2DDE2E8EA36400390A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		643B2DE02E8EA36400390A2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		643B2DE12E8EA36400390A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		643B2DEC2E8EA37C00390A2A /* OnboardingStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepView.swift; sourceTree = "<group>"; };
+		643B2DEE2E8EA38700390A2A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		643B2DF02E8EA39300390A2A /* AchievementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementType.swift; sourceTree = "<group>"; };
+		643B2DF22E8EA39F00390A2A /* AchievementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsService.swift; sourceTree = "<group>"; };
+		643B2DF42E8EA3AA00390A2A /* AchievementUnlockedAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUnlockedAlertView.swift; sourceTree = "<group>"; };
+		643B2DF62E8EA3B500390A2A /* AchievementsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsListView.swift; sourceTree = "<group>"; };
+		643B2DF82E8EA3C000390A2A /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		643B2DFA2E8EA3CC00390A2A /* AICardGeneratorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICardGeneratorViewModel.swift; sourceTree = "<group>"; };
+		643B2DFC2E8EA3D700390A2A /* AICardGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICardGeneratorView.swift; sourceTree = "<group>"; };
+		643B2DFE2E8EA3E400390A2A /* CustomCardObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardObject.swift; sourceTree = "<group>"; };
+		643B2E002E8EA3F300390A2A /* CustomThemesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomThemesListView.swift; sourceTree = "<group>"; };
+		643B2E022E8EA3FF00390A2A /* CreateEditThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditThemeViewModel.swift; sourceTree = "<group>"; };
+		643B2E042E8EA40A00390A2A /* CreateEditThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditThemeView.swift; sourceTree = "<group>"; };
+		643B2E062E8EA41500390A2A /* GameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTheme.swift; sourceTree = "<group>"; };
+		643B2E082E8EA42000390A2A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		643B2E0A2E8EA42C00390A2A /* GameThemesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameThemesView.swift; sourceTree = "<group>"; };
+		643B2E0C2E8EA43600390A2A /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		643B2E0E2E8EA44100390A2A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		643B2E102E8EA44D00390A2A /* GamePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayView.swift; sourceTree = "<group>"; };
+		643B2E122E8EA45A00390A2A /* ResultPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPathView.swift; sourceTree = "<group>"; };
+		643B2E142E8EA46500390A2A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		643B2DBE2E8EA35B00390A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B2E182E8EA49C00390A2A /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		643B2DB82E8EA35B00390A2A = {
+			isa = PBXGroup;
+			children = (
+				643B2DE22E8EA36400390A2A /* ChooseTheWinnerCardApp */,
+				643B2DC22E8EA35B00390A2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		643B2DC22E8EA35B00390A2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		643B2DE22E8EA36400390A2A /* ChooseTheWinnerCardApp */ = {
+			isa = PBXGroup;
+			children = (
+				643B2DEB2E8EA36E00390A2A /* SUI */,
+				643B2DEA2E8EA36900390A2A /* APP */,
+				643B2DDA2E8EA36400390A2A /* Assets.xcassets */,
+				643B2DDB2E8EA36400390A2A /* Info.plist */,
+				643B2DDD2E8EA36400390A2A /* LaunchScreen.storyboard */,
+				643B2DDF2E8EA36400390A2A /* Main.storyboard */,
+			);
+			path = ChooseTheWinnerCardApp;
+			sourceTree = "<group>";
+		};
+		643B2DEA2E8EA36900390A2A /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				643B2DD92E8EA36400390A2A /* AppDelegate.swift */,
+				643B2DE02E8EA36400390A2A /* SceneDelegate.swift */,
+				643B2DE12E8EA36400390A2A /* ViewController.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		643B2DEB2E8EA36E00390A2A /* SUI */ = {
+			isa = PBXGroup;
+			children = (
+				643B2DEC2E8EA37C00390A2A /* OnboardingStepView.swift */,
+				643B2DEE2E8EA38700390A2A /* OnboardingView.swift */,
+				643B2DF02E8EA39300390A2A /* AchievementType.swift */,
+				643B2DF22E8EA39F00390A2A /* AchievementsService.swift */,
+				643B2DF42E8EA3AA00390A2A /* AchievementUnlockedAlertView.swift */,
+				643B2DF62E8EA3B500390A2A /* AchievementsListView.swift */,
+				643B2DF82E8EA3C000390A2A /* GeminiService.swift */,
+				643B2DFA2E8EA3CC00390A2A /* AICardGeneratorViewModel.swift */,
+				643B2DFC2E8EA3D700390A2A /* AICardGeneratorView.swift */,
+				643B2DFE2E8EA3E400390A2A /* CustomCardObject.swift */,
+				643B2E002E8EA3F300390A2A /* CustomThemesListView.swift */,
+				643B2E022E8EA3FF00390A2A /* CreateEditThemeViewModel.swift */,
+				643B2E042E8EA40A00390A2A /* CreateEditThemeView.swift */,
+				643B2E062E8EA41500390A2A /* GameTheme.swift */,
+				643B2E082E8EA42000390A2A /* DataManager.swift */,
+				643B2E0A2E8EA42C00390A2A /* GameThemesView.swift */,
+				643B2E0C2E8EA43600390A2A /* GameViewModel.swift */,
+				643B2E0E2E8EA44100390A2A /* CardView.swift */,
+				643B2E102E8EA44D00390A2A /* GamePlayView.swift */,
+				643B2E122E8EA45A00390A2A /* ResultPathView.swift */,
+				643B2E142E8EA46500390A2A /* MainTabView.swift */,
+			);
+			path = SUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		643B2DC02E8EA35B00390A2A /* ChooseTheWinnerCardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 643B2DD42E8EA35C00390A2A /* Build configuration list for PBXNativeTarget "ChooseTheWinnerCardApp" */;
+			buildPhases = (
+				643B2DBD2E8EA35B00390A2A /* Sources */,
+				643B2DBE2E8EA35B00390A2A /* Frameworks */,
+				643B2DBF2E8EA35B00390A2A /* Resources */,
+				643B2E1A2E8EA4A400390A2A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChooseTheWinnerCardApp;
+			packageProductDependencies = (
+				643B2E172E8EA49C00390A2A /* RealmSwift */,
+			);
+			productName = ChooseTheWinnerCardApp;
+			productReference = 643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		643B2DB92E8EA35B00390A2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					643B2DC02E8EA35B00390A2A = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 643B2DBC2E8EA35B00390A2A /* Build configuration list for PBXProject "ChooseTheWinnerCardApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 643B2DB82E8EA35B00390A2A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 643B2DC22E8EA35B00390A2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				643B2DC02E8EA35B00390A2A /* ChooseTheWinnerCardApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		643B2DBF2E8EA35B00390A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B2DE32E8EA36400390A2A /* Assets.xcassets in Resources */,
+				643B2DE52E8EA36400390A2A /* LaunchScreen.storyboard in Resources */,
+				643B2DE62E8EA36400390A2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		643B2DBD2E8EA35B00390A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643B2DF32E8EA39F00390A2A /* AchievementsService.swift in Sources */,
+				643B2E032E8EA3FF00390A2A /* CreateEditThemeViewModel.swift in Sources */,
+				643B2DE72E8EA36400390A2A /* AppDelegate.swift in Sources */,
+				643B2DED2E8EA37C00390A2A /* OnboardingStepView.swift in Sources */,
+				643B2E012E8EA3F300390A2A /* CustomThemesListView.swift in Sources */,
+				643B2E132E8EA45A00390A2A /* ResultPathView.swift in Sources */,
+				643B2DE82E8EA36400390A2A /* SceneDelegate.swift in Sources */,
+				643B2E112E8EA44D00390A2A /* GamePlayView.swift in Sources */,
+				643B2E072E8EA41500390A2A /* GameTheme.swift in Sources */,
+				643B2E0F2E8EA44100390A2A /* CardView.swift in Sources */,
+				643B2E092E8EA42000390A2A /* DataManager.swift in Sources */,
+				643B2E152E8EA46500390A2A /* MainTabView.swift in Sources */,
+				643B2E0D2E8EA43600390A2A /* GameViewModel.swift in Sources */,
+				643B2E0B2E8EA42C00390A2A /* GameThemesView.swift in Sources */,
+				643B2DF12E8EA39300390A2A /* AchievementType.swift in Sources */,
+				643B2DEF2E8EA38700390A2A /* OnboardingView.swift in Sources */,
+				643B2DF92E8EA3C000390A2A /* GeminiService.swift in Sources */,
+				643B2DF52E8EA3AA00390A2A /* AchievementUnlockedAlertView.swift in Sources */,
+				643B2DFF2E8EA3E400390A2A /* CustomCardObject.swift in Sources */,
+				643B2DFB2E8EA3CC00390A2A /* AICardGeneratorViewModel.swift in Sources */,
+				643B2E052E8EA40A00390A2A /* CreateEditThemeView.swift in Sources */,
+				643B2DE92E8EA36400390A2A /* ViewController.swift in Sources */,
+				643B2DFD2E8EA3D700390A2A /* AICardGeneratorView.swift in Sources */,
+				643B2DF72E8EA3B500390A2A /* AchievementsListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		643B2DDD2E8EA36400390A2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B2DDC2E8EA36400390A2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		643B2DDF2E8EA36400390A2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				643B2DDE2E8EA36400390A2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		643B2DD52E8EA35C00390A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChooseTheWinnerCardApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Decision Path";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		643B2DD62E8EA35C00390A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChooseTheWinnerCardApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Decision Path";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		643B2DD72E8EA35C00390A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		643B2DD82E8EA35C00390A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		643B2DBC2E8EA35B00390A2A /* Build configuration list for PBXProject "ChooseTheWinnerCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B2DD72E8EA35C00390A2A /* Debug */,
+				643B2DD82E8EA35C00390A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		643B2DD42E8EA35C00390A2A /* Build configuration list for PBXNativeTarget "ChooseTheWinnerCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643B2DD52E8EA35C00390A2A /* Debug */,
+				643B2DD62E8EA35C00390A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		643B2E172E8EA49C00390A2A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 643B2DB92E8EA35B00390A2A /* Project object */;
+}
