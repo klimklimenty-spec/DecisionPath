@@ -1,5 +1,5 @@
 import SwiftUI
-
+@available(iOS 15.0, *)
 struct GamePlayView: View {
     @ObservedObject var viewModel: GameViewModel
     @Environment(\.presentationMode) var presentationMode
@@ -113,19 +113,23 @@ struct GamePlayView: View {
             .animation(.easeInOut, value: viewModel.showResults)
             
             if viewModel.showResults {
-                ResultPathView(
-                    viewModel: viewModel,
-                    onPlayAgain: {
-                        viewModel.resetGame()
-                    },
-                    onChooseNewTheme: {
-                        presentationMode.wrappedValue.dismiss()
-                    }
-                )
-                .background(Color.black.opacity(0.5))
-                .background(.ultraThinMaterial)
-                .transition(.asymmetric(insertion: .scale(scale: 0.8).combined(with: .opacity), removal: .opacity))
-                .animation(.interpolatingSpring(stiffness: springStiffness, damping: springDamping + 2), value: viewModel.showResults)
+                if #available(iOS 16.0, *) {
+                    ResultPathView(
+                        viewModel: viewModel,
+                        onPlayAgain: {
+                            viewModel.resetGame()
+                        },
+                        onChooseNewTheme: {
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    )
+                    .background(Color.black.opacity(0.5))
+                    .background(.ultraThinMaterial)
+                    .transition(.asymmetric(insertion: .scale(scale: 0.8).combined(with: .opacity), removal: .opacity))
+                    .animation(.interpolatingSpring(stiffness: springStiffness, damping: springDamping + 2), value: viewModel.showResults)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
         }
         .overlay {

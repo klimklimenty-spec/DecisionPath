@@ -1,5 +1,6 @@
 //import SwiftUI
 //
+@available(iOS 16.0, *)
 struct ResultPathView: View {
     @ObservedObject var viewModel: GameViewModel
     var onPlayAgain: () -> Void

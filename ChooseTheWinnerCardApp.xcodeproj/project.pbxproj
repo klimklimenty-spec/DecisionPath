@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0485EBF72E8FE58600F79BE9 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 0485EBF62E8FE58600F79BE9 /* OneSignalExtension */; };
+		0485EBF92E8FE58600F79BE9 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 0485EBF82E8FE58600F79BE9 /* OneSignalFramework */; };
+		0485EC052E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0485EBFE2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0485EC0C2E8FE5C800F79BE9 /* Vytffgyds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485EC0B2E8FE5C700F79BE9 /* Vytffgyds.swift */; };
+		0485EC0E2E8FE5D300F79BE9 /* Bfghsdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485EC0D2E8FE5D200F79BE9 /* Bfghsdf.swift */; };
+		0485EC102E8FE5DF00F79BE9 /* Oklhfhgshdjgf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485EC0F2E8FE5DE00F79BE9 /* Oklhfhgshdjgf.swift */; };
+		0485EC122E8FE5E900F79BE9 /* Guysdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0485EC112E8FE5E800F79BE9 /* Guysdf.swift */; };
 		643B2DE32E8EA36400390A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDA2E8EA36400390A2A /* Assets.xcassets */; };
 		643B2DE52E8EA36400390A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDD2E8EA36400390A2A /* LaunchScreen.storyboard */; };
 		643B2DE62E8EA36400390A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643B2DDF2E8EA36400390A2A /* Main.storyboard */; };
@@ -38,7 +45,28 @@
 		643B2E192E8EA4A400390A2A /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 643B2E172E8EA49C00390A2A /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0485EC032E8FE58F00F79BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643B2DB92E8EA35B00390A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0485EBFD2E8FE58F00F79BE9;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		0485EC0A2E8FE58F00F79BE9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0485EC052E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643B2E1A2E8EA4A400390A2A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,6 +81,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0485EBFE2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0485EC0B2E8FE5C700F79BE9 /* Vytffgyds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vytffgyds.swift; sourceTree = "<group>"; };
+		0485EC0D2E8FE5D200F79BE9 /* Bfghsdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bfghsdf.swift; sourceTree = "<group>"; };
+		0485EC0F2E8FE5DE00F79BE9 /* Oklhfhgshdjgf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oklhfhgshdjgf.swift; sourceTree = "<group>"; };
+		0485EC112E8FE5E800F79BE9 /* Guysdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guysdf.swift; sourceTree = "<group>"; };
+		0485EC132E8FE87D00F79BE9 /* ChooseTheWinnerCardApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChooseTheWinnerCardApp.entitlements; sourceTree = "<group>"; };
 		643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChooseTheWinnerCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		643B2DD92E8EA36400390A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		643B2DDA2E8EA36400390A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,12 +118,42 @@
 		643B2E142E8EA46500390A2A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0485EC062E8FE58F00F79BE9 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0485EBFD2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0485EBFF2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0485EC062E8FE58F00F79BE9 /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		0485EBFB2E8FE58F00F79BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643B2DBE2E8EA35B00390A2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				643B2E182E8EA49C00390A2A /* RealmSwift in Frameworks */,
+				0485EBF92E8FE58600F79BE9 /* OneSignalFramework in Frameworks */,
+				0485EBF72E8FE58600F79BE9 /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				643B2DE22E8EA36400390A2A /* ChooseTheWinnerCardApp */,
+				0485EBFF2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */,
 				643B2DC22E8EA35B00390A2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */,
+				0485EBFE2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +181,7 @@
 		643B2DE22E8EA36400390A2A /* ChooseTheWinnerCardApp */ = {
 			isa = PBXGroup;
 			children = (
+				0485EC132E8FE87D00F79BE9 /* ChooseTheWinnerCardApp.entitlements */,
 				643B2DEB2E8EA36E00390A2A /* SUI */,
 				643B2DEA2E8EA36900390A2A /* APP */,
 				643B2DDA2E8EA36400390A2A /* Assets.xcassets */,
@@ -138,6 +205,10 @@
 		643B2DEB2E8EA36E00390A2A /* SUI */ = {
 			isa = PBXGroup;
 			children = (
+				0485EC112E8FE5E800F79BE9 /* Guysdf.swift */,
+				0485EC0F2E8FE5DE00F79BE9 /* Oklhfhgshdjgf.swift */,
+				0485EC0D2E8FE5D200F79BE9 /* Bfghsdf.swift */,
+				0485EC0B2E8FE5C700F79BE9 /* Vytffgyds.swift */,
 				643B2DEC2E8EA37C00390A2A /* OnboardingStepView.swift */,
 				643B2DEE2E8EA38700390A2A /* OnboardingView.swift */,
 				643B2DF02E8EA39300390A2A /* AchievementType.swift */,
@@ -166,6 +237,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0485EBFD2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0485EC072E8FE58F00F79BE9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				0485EBFA2E8FE58F00F79BE9 /* Sources */,
+				0485EBFB2E8FE58F00F79BE9 /* Frameworks */,
+				0485EBFC2E8FE58F00F79BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0485EBFF2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 0485EBFE2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		643B2DC02E8EA35B00390A2A /* ChooseTheWinnerCardApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 643B2DD42E8EA35C00390A2A /* Build configuration list for PBXNativeTarget "ChooseTheWinnerCardApp" */;
@@ -174,14 +267,18 @@
 				643B2DBE2E8EA35B00390A2A /* Frameworks */,
 				643B2DBF2E8EA35B00390A2A /* Resources */,
 				643B2E1A2E8EA4A400390A2A /* Embed Frameworks */,
+				0485EC0A2E8FE58F00F79BE9 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0485EC042E8FE58F00F79BE9 /* PBXTargetDependency */,
 			);
 			name = ChooseTheWinnerCardApp;
 			packageProductDependencies = (
 				643B2E172E8EA49C00390A2A /* RealmSwift */,
+				0485EBF62E8FE58600F79BE9 /* OneSignalExtension */,
+				0485EBF82E8FE58600F79BE9 /* OneSignalFramework */,
 			);
 			productName = ChooseTheWinnerCardApp;
 			productReference = 643B2DC12E8EA35B00390A2A /* ChooseTheWinnerCardApp.app */;
@@ -194,9 +291,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					0485EBFD2E8FE58F00F79BE9 = {
+						CreatedOnToolsVersion = 26.0;
+					};
 					643B2DC02E8EA35B00390A2A = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -213,6 +313,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */,
+				0485EBF52E8FE58600F79BE9 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 643B2DC22E8EA35B00390A2A /* Products */;
@@ -220,11 +321,19 @@
 			projectRoot = "";
 			targets = (
 				643B2DC02E8EA35B00390A2A /* ChooseTheWinnerCardApp */,
+				0485EBFD2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0485EBFC2E8FE58F00F79BE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643B2DBF2E8EA35B00390A2A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,10 +347,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0485EBFA2E8FE58F00F79BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		643B2DBD2E8EA35B00390A2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0485EC122E8FE5E900F79BE9 /* Guysdf.swift in Sources */,
 				643B2DF32E8EA39F00390A2A /* AchievementsService.swift in Sources */,
 				643B2E032E8EA3FF00390A2A /* CreateEditThemeViewModel.swift in Sources */,
 				643B2DE72E8EA36400390A2A /* AppDelegate.swift in Sources */,
@@ -251,7 +368,9 @@
 				643B2DE82E8EA36400390A2A /* SceneDelegate.swift in Sources */,
 				643B2E112E8EA44D00390A2A /* GamePlayView.swift in Sources */,
 				643B2E072E8EA41500390A2A /* GameTheme.swift in Sources */,
+				0485EC0C2E8FE5C800F79BE9 /* Vytffgyds.swift in Sources */,
 				643B2E0F2E8EA44100390A2A /* CardView.swift in Sources */,
+				0485EC102E8FE5DF00F79BE9 /* Oklhfhgshdjgf.swift in Sources */,
 				643B2E092E8EA42000390A2A /* DataManager.swift in Sources */,
 				643B2E152E8EA46500390A2A /* MainTabView.swift in Sources */,
 				643B2E0D2E8EA43600390A2A /* GameViewModel.swift in Sources */,
@@ -265,11 +384,20 @@
 				643B2E052E8EA40A00390A2A /* CreateEditThemeView.swift in Sources */,
 				643B2DE92E8EA36400390A2A /* ViewController.swift in Sources */,
 				643B2DFD2E8EA3D700390A2A /* AICardGeneratorView.swift in Sources */,
+				0485EC0E2E8FE5D300F79BE9 /* Bfghsdf.swift in Sources */,
 				643B2DF72E8EA3B500390A2A /* AchievementsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0485EC042E8FE58F00F79BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0485EBFD2E8FE58F00F79BE9 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 0485EC032E8FE58F00F79BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		643B2DDD2E8EA36400390A2A /* LaunchScreen.storyboard */ = {
@@ -291,27 +419,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0485EC082E8FE58F00F79BE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0485EC092E8FE58F00F79BE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		643B2DD52E8EA35C00390A2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChooseTheWinnerCardApp/ChooseTheWinnerCardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChooseTheWinnerCardApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Decision Path";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Power Plate needs access to your camera to take photos for your recipes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -329,22 +516,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ChooseTheWinnerCardApp/ChooseTheWinnerCardApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChooseTheWinnerCardApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Decision Path";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Power Plate needs access to your camera to take photos for your recipes.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChooseTheWinnerCardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -479,6 +669,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0485EC072E8FE58F00F79BE9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0485EC082E8FE58F00F79BE9 /* Debug */,
+				0485EC092E8FE58F00F79BE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		643B2DBC2E8EA35B00390A2A /* Build configuration list for PBXProject "ChooseTheWinnerCardApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -500,6 +699,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0485EBF52E8FE58600F79BE9 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
 		643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -511,6 +718,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0485EBF62E8FE58600F79BE9 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0485EBF52E8FE58600F79BE9 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
+		0485EBF82E8FE58600F79BE9 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0485EBF52E8FE58600F79BE9 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalFramework;
+		};
 		643B2E172E8EA49C00390A2A /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 643B2E162E8EA49C00390A2A /* XCRemoteSwiftPackageReference "realm-swift" */;

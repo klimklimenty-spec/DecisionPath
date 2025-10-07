@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AchievementUnlockedAlertView: View {
     let achievement: Achievement // Теперь будет приходить уже с isUnlocked = true
     

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct AICardGeneratorView: View {
     @StateObject private var viewModel = AICardGeneratorViewModel()
     
@@ -41,19 +42,23 @@ struct AICardGeneratorView: View {
                         Text("Your Prompt")
                             .sectionTitleStyleAI()
                         
-                        TextEditor(text: $viewModel.userPrompt)
-                            .frame(height: 100)
-                            .scrollContentBackground(.hidden)
-                            .background(Color.black.opacity(0.3))
-                            .cornerRadius(10)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.neonGreen.opacity(0.6), lineWidth: 1)
-                            )
-                            .foregroundColor(.white)
-                            .accentColor(.neonGreen)
-                            .font(.system(size: 16))
-                            .padding(4)
+                        if #available(iOS 16.0, *) {
+                            TextEditor(text: $viewModel.userPrompt)
+                                .frame(height: 100)
+                                .scrollContentBackground(.hidden)
+                                .background(Color.black.opacity(0.3))
+                                .cornerRadius(10)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.neonGreen.opacity(0.6), lineWidth: 1)
+                                )
+                                .foregroundColor(.white)
+                                .accentColor(.neonGreen)
+                                .font(.system(size: 16))
+                                .padding(4)
+                        } else {
+                            // Fallback on earlier versions
+                        }
                         
                         // MARK: - Number of Cards
                         Text("Number of Cards")
@@ -178,13 +183,5 @@ struct NeonTextEditorStyle: ViewModifier {
             .foregroundColor(.white)
             .accentColor(.neonGreen)
             .disableAutocorrection(true)
-    }
-}
-
-// MARK: - Preview
-struct AICardGeneratorView_Previews: PreviewProvider {
-    static var previews: some View {
-        AICardGeneratorView()
-            .preferredColorScheme(.dark)
     }
 }

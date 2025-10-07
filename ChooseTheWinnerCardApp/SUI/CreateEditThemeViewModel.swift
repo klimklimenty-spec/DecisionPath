@@ -10,6 +10,7 @@ import Combine // Для ObservableObject и @Published
 import PhotosUI // Для PhotoPicker
 import RealmSwift // Для ObjectId
 
+@available(iOS 16.0, *)
 class CreateEditThemeViewModel: ObservableObject {
     // Зависимости
     private var realmService: RealmService

@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-#Preview {
-    MainTabView()
-}
+
 
 struct MainTabView: View {
     @State private var selectedTab: Tab = .game
@@ -30,24 +28,46 @@ struct MainTabView: View {
         ZStack(alignment: .bottom) {
             // Контент для выбранной вкладки
             TabView(selection: $selectedTab) {
-                GameThemesView() // Наш экран со списком тем
-                    .tag(Tab.game)
+                if #available(iOS 15.0, *) {
+                    GameThemesView() // Наш экран со списком тем
+                        .tag(Tab.game)
+                } else {
+                    // Fallback on earlier versions
+                }
                 // Добавьте сюда View для других вкладок позже
-                CustomThemesListView()
-                    .tag(Tab.create)
-                AICardGeneratorView()
-                    .tag(Tab.aiGen)
-                AchievementsListView()
-                    .tag(Tab.awards)
+                if #available(iOS 15.0, *) {
+                    CustomThemesListView()
+                        .tag(Tab.create)
+                } else {
+                    // Fallback on earlier versions
+                }
+                if #available(iOS 15.0, *) {
+                    AICardGeneratorView()
+                        .tag(Tab.aiGen)
+                } else {
+                    
+                }
+                if #available(iOS 15.0, *) {
+                    AchievementsListView()
+                        .tag(Tab.awards)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
 
             // Кастомный TabBar
-            CustomTabBar(selectedTab: $selectedTab)
+            if #available(iOS 15.0, *) {
+                CustomTabBar(selectedTab: $selectedTab)
+            }
         }
         .ignoresSafeArea(.keyboard)
         .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
         .fullScreenCover(isPresented: $hasCompletedOnboarding) {
-            OnboardingView()
+            if #available(iOS 15.0, *) {
+                OnboardingView()
+            } else {
+                // Fallback on earlier versions
+            }
         }
         .onAppear {
             if !UserDefaults.standard.bool(forKey: "init") {
@@ -60,6 +80,7 @@ struct MainTabView: View {
 }
 
 // Кастомный TabBar View
+@available(iOS 15.0, *)
 struct CustomTabBar: View {
     @Binding var selectedTab: MainTabView.Tab
 

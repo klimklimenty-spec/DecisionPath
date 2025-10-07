@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 import RealmSwift // Для Results и @ObservedResults
-
+@available(iOS 15.0, *)
 struct CustomThemesListView: View {
     @ObservedResults(CustomThemeObject.self, sortDescriptor: SortDescriptor(keyPath: "createdAt", ascending: false)) var customThemes
     
@@ -93,11 +93,15 @@ struct CustomThemesListView: View {
         }
         .tint(.white)
         .fullScreenCover(isPresented: $showingCreateNewThemeView) {
-            CreateEditThemeView(realmService: realmService) {}
-                .onDisappear {
-                    showAch()
-                }
-                .tint(.white)
+            if #available(iOS 16.0, *) {
+                CreateEditThemeView(realmService: realmService) {}
+                    .onDisappear {
+                        showAch()
+                    }
+                    .tint(.white)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         .fullScreenCover(item: $gameViewModelForSelectedTheme) { viewModel in
             GamePlayView(viewModel: viewModel)
@@ -298,10 +302,4 @@ struct FloatingActionButton: View {
     }
 }
 
-// MARK: - Preview
-struct CustomThemesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomThemesListView()
-            .preferredColorScheme(.dark)
-    }
-}
+

@@ -9,12 +9,14 @@ import Foundation
 import SwiftUI
 import PhotosUI // Для PhotosPicker
 
+@available(iOS 16.0, *)
 struct CreateEditThemeView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject var viewModel: CreateEditThemeViewModel
 
     var onDismiss: (() -> Void)?
 
+    @available(iOS 16.0, *)
     init(realmService: RealmService, themeToEdit: CustomThemeObject? = nil, onDismiss: (() -> Void)? = nil) {
         _viewModel = StateObject(wrappedValue: CreateEditThemeViewModel(realmService: realmService, themeToEdit: themeToEdit))
         self.onDismiss = onDismiss
@@ -219,19 +221,3 @@ struct NeonTextFieldStyle: TextFieldStyle {
 }
 
 
-// MARK: - Preview
-struct CreateEditThemeView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Создаем моковый RealmService для превью
-        let realmService = RealmService() // В превью он будет использовать in-memory Realm или дефолтный
-        
-        // Превью для создания новой темы
-        CreateEditThemeView(realmService: realmService, onDismiss: { print("Preview Dismissed") })
-            .preferredColorScheme(.dark)
-            .previewDisplayName("Create New")
-
-        // Превью для редактирования (нужно создать моковый CustomThemeObject)
-        // Это более сложная настройка для превью, так как требует записи в Realm.
-        // Можно сделать так, чтобы ViewModel принимал начальные данные без themeToEdit.
-    }
-}

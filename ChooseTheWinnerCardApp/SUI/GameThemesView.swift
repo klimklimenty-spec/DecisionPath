@@ -8,6 +8,7 @@
 import SwiftUI
 
 
+@available(iOS 15.0, *)
 struct GameThemesView: View {
     let themes = DataManager.shared.predefinedThemes
 
@@ -144,10 +145,3 @@ struct ThemeRow: View {
         .buttonStyle(PlainButtonStyle()) // Убираем стандартное поведение затемнения кнопки при нажатии
     }
 }
-struct GameThemesView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameThemesView()
-            .preferredColorScheme(.dark)
-    }
-}
-

@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-#Preview {
-    OnboardingView()
-}
 
 
+@available(iOS 15.0, *)
 struct OnboardingView: View {
     @State private var currentStep = 0
     @Environment(\.dismiss) var dismiss
@@ -101,12 +99,5 @@ struct OnboardingButtonStyle: ButtonStyle {
             .shadow(color: (isPrimary ? Color.neonGreen : Color.deepPurple).opacity(0.4), radius: 5, y: 3)
             .scaleEffect(configuration.isPressed ? 0.96 : 1.0)
             .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
-    }
-}
-
-struct OnboardingView_Previews: PreviewProvider {
-    static var previews: some View {
-        OnboardingView()
-            .preferredColorScheme(.dark)
     }
 }
